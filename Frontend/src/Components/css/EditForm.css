@@ -1,0 +1,123 @@
+.edit-form {
+  max-width: 600px;
+  margin: 0 auto; /* Center the form on the page */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.edit-form div {
+  margin-bottom: 15px;
+}
+
+.edit-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.edit-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.edit-form .url-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.edit-form .url-input input[type="text"] {
+  flex: 1;
+}
+
+.edit-form .url-input button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e74c3c;
+  color: #fff;
+  cursor: pointer;
+}
+
+.edit-form .url-input button:hover {
+  background-color: #c0392b;
+}
+
+.edit-form button[type="button"] {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+}
+
+.edit-form button[type="button"]:hover {
+  background-color: #2980b9;
+}
+
+/* Center the Update and Cancel buttons */
+.edit-form .form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.edit-form .update-button,
+.edit-form .cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+}
+
+.edit-form .update-button:hover {
+  background-color: #2980b9;
+}
+
+.edit-form .cancel-button {
+  background-color: #e74c3c;
+}
+
+.edit-form .cancel-button:hover {
+  background-color: #c0392b;
+}
+
+.edit-form .qr-code-preview {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.edit-form .qr-code-preview img {
+  margin: 5px;
+}
+
+/* Center the "Add Another URL" button */
+.edit-form .add-url-button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2ecc71;
+  color: #fff;
+  cursor: pointer;
+}
+
+.edit-form .add-url-button:hover {
+  background-color: #27ae60;
+}
