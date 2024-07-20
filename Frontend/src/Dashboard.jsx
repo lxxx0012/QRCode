@@ -254,7 +254,7 @@ const Dashboard = () => {
                       const firstUrl = qrCode.urls[0];
                       const lastUrl = qrCode.urls[qrCode.urls.length - 1];
                       const fullUrl = lastUrl.startsWith('http://') || lastUrl.startsWith('https://') ? lastUrl : 'http://' + lastUrl;
-                      window.open(fullUrl, '_blank');
+                      window.open('http://localhost:5000/api/redirect/${qrCode._id}', '_blank');
                     }}>
                       <img
                         src={`http://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrCode.urls[0])}&size=60x60`}
