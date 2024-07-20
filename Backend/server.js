@@ -39,7 +39,6 @@ app.get('/qrcodes/:id', async (req, res) => {
     const lastUrl = urls[urls.length - 1];
     console.log('Last URL:', lastUrl);
 
-    const qr = await QRCode.toDataURL(`https://qrcode-mebj.onrender.com/qrcodes/${qrCodeId}`);
     res.redirect(lastUrl);
   } catch (error) {
     console.error('Error fetching QR Code for redirection:', error);
