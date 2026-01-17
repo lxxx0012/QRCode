@@ -1,29 +1,102 @@
 QR Code Management Application
-This application allows users to generate and manage dynamic QR codes. 
-A key feature of this project is the ability to use a static physical QR code (such as one built from LEGO) 
-and dynamically update its destination URL through a web dashboard without needing to change the physical LEGO QR code block.
+A full‑stack web application for generating, managing, and updating QR codes dynamically. The system was designed to support a static LEGO‑built QR code that can redirect to different URLs without modifying the physical code. The application provides a clean dashboard interface for creating and updating QR entries.
 
-🚀 Key Features
-Dynamic Redirection: Update the destination URL of your QR codes in real-time.
-
-Management Dashboard: Intuitive UI to create, track, and edit QR code data.
-
-LEGO Integration: Specifically designed to support static, physical QR builds with digital flexibility.
-
-Collaborative Development: Built with a focus on clean version control and efficient debugging.
+🚀 Features
+- Generate unique QR codes with customizable destination URLs
+- Update or change the URL behind an existing QR code
+- Dashboard interface for viewing and managing all QR entries
+- Responsive front‑end built with modern UI practices
+- REST API for creating, retrieving, and updating QR code data
 
 🛠️ Tech Stack
-Frontend: React.js
-Backend: Node.js, Express
-Database: MongoDB
+Front-End
+- React.js
+- HTML5, CSS3
+- Axios
+- Responsive UI components
+Back-End
+- Node.js
+- Express.js
+- REST API architecture
+Database
+- MongoDB (Mongoose ODM)
+Tools
+- Git & GitHub
+- VS Code
+- Postman
+- npm / Node Package Manager
 
-Version Control: Git/GitHub
+👨‍💻 My Contributions
+- Implemented QR code generation and update logic
+- Built dashboard components and UI layout
+- Integrated front‑end with back‑end API endpoints
+- Collaborated through GitHub for version control and debugging
+- Helped structure the project for maintainability and clarity
 
-🏁 Getting Started
-Clone the repo: git clone https://github.com/yourusername/qr-manager.git
+📦 Installation & Setup
+1. Clone the repository
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
 
-Install dependencies: npm install
+
+2. Install dependencies
+Client
+cd client
+npm install
 
-Set up environment variables: Configure your MongoDB URI in a .env file.
 
-Run the app: npm start
+Server
+cd server
+npm install
+
+
+3. Environment variables
+Create a .env file in the server folder with:
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+
+
+4. Run the application
+Start the server
+cd server
+npm start
+
+
+Start the client
+cd client
+npm start
+
+
+The app will run at:
+http://localhost:3000
+
+📁 Project Structure
+/client
+  /src
+    components/
+    pages/
+    App.js
+    index.js
+
+/server
+  /routes
+  /models
+  /controllers
+  server.js
+
+README.md
+
+
+
+🎯 Project Goal
+The main objective was to create a system where a static physical QR code (built from LEGO bricks) could remain unchanged while its destination URL could be updated dynamically through a web interface. This required a combination of front‑end UI, back‑end logic, and database integration.
+
+📌 Future Improvements
+- User authentication for secure QR management
+- Analytics dashboard (scan counts, traffic sources)
+- Custom QR styling and downloadable images
+- Deployment to Vercel / Netlify + Render / Railway
+
+🤝 Contributors
+- Team project for Humber College Web Development Program
+- My role: Front‑end development, QR logic, dashboard UI, GitHub collaboration
